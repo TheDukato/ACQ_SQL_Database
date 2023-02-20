@@ -24,6 +24,15 @@ at_index = 0
 for x in range(len(programArgs)):
     if (programArgs[x] == "--add"):
         choosed_option = 1
+        for y in range(x,len(programArgs)):
+            if(programArgs[y] == "-S"):
+                print('Add sensor/meter')
+            if(programArgs[y] == "-L"):
+                print('Add Location')
+            if(programArgs[y] == "-M"):
+                print('Add List of maesurment')
+            if(programArgs[y] == "-m"):
+                print('Add single of measument')                                       
         at_index = x
         break
     if (programArgs[x] == "--show"):
